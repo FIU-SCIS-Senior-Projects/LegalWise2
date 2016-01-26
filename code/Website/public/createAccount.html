@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+ <style>
+        /* use navbar-wrapper to wrap navigation bar, the purpose is to overlay navigation bar above slider */
+        .navbar-wrapper {
+border-bottom: 20px;
+        }
+        .navbar-wrapper > .container {
+            padding: 0;
+        }
+
+ /*       @media all and (max-width: 768px ){
+            .navbar-wrapper {
+                position: relative;
+                top: 0px;
+            }
+        }*/
+ #contact-form {
+    background-color:#F2F7F9;
+    width:500px;
+    padding:20px;
+    margin: 50px auto;    
+    border: 6px solid #8FB5C1;
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    position:relative;
+}
+ 
+#contact-form h1 {
+    font-size:35px;
+}
+ 
+#contact-form h2 {
+    margin-bottom:15px;
+    font-style:italic;
+    font-weight:normal;
+}
+ 
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea, 
+#contact-form label {
+    font-size:15px;
+    margin-bottom:2px;
+}
+ 
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+    width:450px;
+    border: 1px solid #CEE1E8;
+    margin-bottom:20px;
+    padding:4px;
+}
+ 
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+    border: 1px solid #AFCDD8;
+    background-color: #EBF2F4;
+}
+ 
+#contact-form textarea {
+    height:150px;
+    resize: none;
+}
+ 
+#contact-form label {
+    display:block;
+}
+ 
+#contact-form .required {
+    font-weight:bold;
+    color:#F00;    
+}
+ 
+#contact-form #submit-button {
+    width: 100px;
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+    margin-bottom:0px;
+    margin-right:6px;
+    background-color:#8FB5C1;
+    -moz-border-radius:8px;
+}
+ 
+#contact-form #submit-button:hover {
+    background-color: #A6CFDD;
+}
+ 
+#contact-form #submit-button:active {
+    position:relative;
+    top:1px;
+}
+ 
+#contact-form #loading {
+    width:32px;
+    height:32px;
+    background-image:url(../img/loading.gif);
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+ 
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
+    display:none;
+}
+ 
+#errors li {
+    padding:2px;
+    list-style:none;    
+}
+ 
+#errors li:before {
+    content: ' - ';    
+}
+ 
+#errors #info {
+    font-weight:bold;
+}
+ 
+#errors #info:before {
+    content: '';    
+}
+ 
+#success {
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#D3EDD3 url(../img/accepted_48.png) no-repeat 405px center;
+    font-weight:bold;
+    display:none;
+}
+ 
+#errors.visible, #success.visible {
+    display:block;    
+}
+ 
+#req-field-desc {
+    font-style:italic;
+}
+ 
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+ 
+/* Normalize placeholder styles */
+ 
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  { 
+    color:#CCC;
+    font-style:italic;
+}
+    </style>
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+ <script>
+$(document).ready(function(){
+    var from,to,subject,text;
+    var fname, lname, fullname;
+    $("#send_email").click(function(){      
+        to=$("#email").val();   
+       fname=$("#fname").val();
+        lname=$("#lname").val();
+        $("#message").text("Sending E-mail...Please wait");
+        $.get("/send",{to:to, fname:fname, lname:lname},function(data){
+        if(data=="sent")
+        {
+            $("#message").empty().html("<p>Email is been sent at "+to+" . Please check inbox !</p>");
+        }
+
+});
+    });
+});
+</script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>LegalWise</title>
+    <link href="bootstrap.min.css" rel="stylesheet" />
+        </head>
+    <div class="navbar-wrapper">
+        <div class="container">
+
+            <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0px;">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/index.html">Legal Wise</a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li><a href="/about.html">About</a></li>
+                            <li><a href="/login.html">Sign In</a></li>
+                            <li><a href="/createAccount.html">Create Account</a></li>
+                            <li><a href="/support.html">Support</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </div> <!-- end of nav bar div -->
+
+
+<body>
+    <div id="contact-form" class="clearfix">
+    <h1>Sign up as a LegalWise user!</h1>
+    <h4>Fill out the form and become a member to get a 7 day free trial!</h4>
+    <ul id="errors" class="">
+        <li id="info">There were some problems with your form submission:</li>
+    </ul>
+    <p id="success">Thanks for your message! We will get back to you ASAP!</p>
+    <form name= "myForm" method="post" action="createUser" onsubmit="return validateForm()">
+        <label for="fname">First Name: <span class="required">*</span></label>
+        <input type="text" id="fname" name="fname" value="" placeholder="First Name" required="required" autofocus="autofocus" />
+         
+        <label for="name">Last Name: <span class="required">*</span></label>
+        <input type="text" id="lname" name="lname" value="" placeholder="Last Name" required="required" autofocus="autofocus" />
+
+        <label for="email">Email Address: <span class="required">*</span></label>
+        <input type="email" id="email" name="email" value="" placeholder="johndoe@example.com" required="required" />
+
+         <label for="password">Password: <span class="required">*</span></label>
+        <input type="password" id="password" name="password" value="" placeholder="password" required="required" />
+
+            <label for="password">Re-Enter Password: <span class="required">*</span></label>
+        <input type="password" id="re_password" name="re_password" value="" placeholder="password" required="required" />
+
+        <label for="telephone">Mobile Number: </label>
+        <input type="tel" id="telephone" name="telephone" value="" />
+        
+       <label for="gender">Gender: </label>
+        <select id="gender" name="gender">
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+        </select>
+
+        <label for="position">Position: </label>
+        <select id="position" name="position">
+            <option value="attorney">Attorney</option>
+            <option value="lawyer">Lawyer</option>
+            <option value="assistant">Assistant</option>
+        </select>
+         
+         <label for="concentration">Field of Law: </label>
+        <select id="concentration" name="concentration">
+            <option value="general">General</option>
+            <option value="sales">Sales</option>
+            <option value="forclosure">Forclosure</option>
+            <option value="divorce">Divorce</option>
+        </select>
+
+        <label for="fname">Law Firm: </label>
+        <input type="text" id="lawfirm" name="lawfirm" value="" placeholder="Law Firm" autofocus="autofocus" />
+
+        <span id="loading"></span>
+        <input type="submit" value="Submit" id="send_email" />
+        <p id="req-field-desc"><span class="required">*</span> indicates a required field</p>
+    </form>
+    <span id="message"></span>
+
+</div>
+
+
+
+<script>
+function validateForm() {
+    var x = document.forms["myForm"]["fname"].value;
+    var y = document.forms["myForm"]["lname"].value;
+    var email = document.forms["myForm"]["email"].value;
+    var gender = document.forms["myForm"]["gender"].value;
+    var law_firm = document.forms["myForm"]["lawfirm"].value;
+       var position = document.forms["myForm"]["position"].value;
+    var concentration = document.forms["myForm"]["concentration"].value;
+
+    var text = '{"users":[' +
+'{"firstName":' + x + ',"lastName":' + y + ', "email":' + email + '}' + ']}';
+var json = JSON.parse(text);
+console.log(json);
+    console.log(x + " " + y + " "+ email + gender + law_firm);
+    if (x == null || x == "") {
+        alert("First Name must be filled out");
+        return false;
+    }
+    if(y == null || y == ""){
+        alert("Last Name must be filled out");
+        return false;
+    }
+    if(email == null || email == ""){
+        alert("Email must be filled out");
+        return false;
+    }
+    if(gender == null || gender == ""){
+        alert("Gender must be filled out");
+        return false;
+    }
+
+}
+//function to return user JSON object
+function returnJson(){
+
+    var x = document.forms["myForm"]["fname"].value;
+    var y = document.forms["myForm"]["lname"].value;
+    var email = document.forms["myForm"]["email"].value;
+    var gender = document.forms["myForm"]["gender"].value;
+    var law_firm = document.forms["myForm"]["lawfirm"].value;
+    var position = document.forms["myForm"]["position"].value;
+    var concentration = document.forms["myForm"]["concentration"].value;
+    var telephone = document.forms["myForm"]["telephone"].value;
+    var text = '{"users":[' +
+'{"firstName":' + x + ',"lastName":' + y + ', "email":' + email + '}' + ']}';
+var json = JSON.parse(text);
+console.log(json);
+return json;
+
+}
+</script>
+</body>
+</html>
