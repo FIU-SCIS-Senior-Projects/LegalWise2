@@ -1,74 +1,77 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 
     <title>LegalWise</title>
 
     <link href="bootstrap.min.css" rel="stylesheet" />
     <script src="/js/frontend.js"></script>
-         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
     <script>
-  function test_login(then, expected) {
-    results.total++;
-    var result = prettyDate("2008/01/28 22:25:00", then);
-    if (result !== expected) {
-      results.bad++;
-      console.log("Expected " + expected +
-        ", but was " + result);
-    }
-  }
-  var results = {
-    total: 0,
-    bad: 0
-  };
-  test("2008/01/28 22:24:30", "just now");
-  test("2008/01/28 22:23:30", "1 minute ago");
-  test("2008/01/28 21:23:30", "1 hour ago");
-  test("2008/01/27 22:23:30", "Yesterday");
-  test("2008/01/26 22:23:30", "2 days ago");
-  test("2007/01/26 22:23:30", undefined);
-  console.log("Of " + results.total + " tests, " +
-    results.bad + " failed, " +
-    (results.total - results.bad) + " passed.");
+        function test_login(then, expected) {
+            results.total++;
+            var result = prettyDate("2008/01/28 22:25:00", then);
+            if (result !== expected) {
+                results.bad++;
+                console.log("Expected " + expected +
+                  ", but was " + result);
+            }
+        }
+        var results = {
+            total: 0,
+            bad: 0
+        };
+        test("2008/01/28 22:24:30", "just now");
+        test("2008/01/28 22:23:30", "1 minute ago");
+        test("2008/01/28 21:23:30", "1 hour ago");
+        test("2008/01/27 22:23:30", "Yesterday");
+        test("2008/01/26 22:23:30", "2 days ago");
+        test("2007/01/26 22:23:30", undefined);
+        console.log("Of " + results.total + " tests, " +
+          results.bad + " failed, " +
+          (results.total - results.bad) + " passed.");
     </script>
 </head>
 <body>
 
     <!-- NAVBAR============== -->
     <style>
-
         /* use navbar-wrapper to wrap navigation bar, the purpose is to overlay navigation bar above slider */
         .navbar-wrapper {
-            position: absolute; 
+            position: absolute;
             top: 0px;
             width: 100%;
             height: 90%;
         }
-        .navbar-wrapper > .container {
-            padding: 0;
-        }
 
-      /*  @media all and (max-width: 900px ){
+            .navbar-wrapper > .container {
+                padding: 0;
+            }
+
+        /*  @media all and (max-width: 900px ){
             .navbar-wrapper {
                 position: relative;
                 top: 0px;
             }
-        */}
+        */ }
     </style>
-    <div class="navbar-wrapper" >
+    <div class="navbar-wrapper">
         <div class="container">
 
-            <nav class="navbar navbar-inverse navbar-static-top" role="navigation" style="margin-bottom: 0px; height: 90px;">
+            <nav class="navbar navbar-inverse navbar-static-top" role="navigation"
+                    style="margin-bottom: 0px; height: 90px;">
                 <div class="container">
                     <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <button type="button" class="navbar-toggle collapsed" 
+                                data-toggle="collapse" data-target="#navbar" 
+                                aria-expanded="false" aria-controls="navbar">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -81,20 +84,27 @@
                             <li><a href="/about.html">About</a></li>
                             <li><a href="/support.html">Support</a></li>
 
-            <form id="login" name="login" action="loginUser" method="post" style="position: absolute; right: 20px;top=20px; width = 60px; height: 20px">
-            <ul>
-                <li><label for = "useremail"  style="color: white;">Email</label>
-                    <input  style="margin-left:5em" type="email" id="useremail" name="useremail" placeholder ="email@email.com" required></li>
-                    <li><label for="password" style="color: white;">Password</label>
-                        <input  style="margin-left:3em" type="password" id="password" name="password" placehold="password" required></li>
+                            <form id="login" name="login" action="loginUser" method="post" 
+                                  style="position: absolute; right: 20px;top=20px; width = 60px; height: 20px">
+                                <ul>
+                                    <li>
+                                        <label for="useremail" style="color: white;">Email</label>
+                                        <input style="margin-left:5em" type="email" id="useremail" 
+                                               name="useremail" placeholder="email@email.com" required>
+                                    </li>
+                                    <li>
+                                        <label for="password" style="color: white;">Password</label>
+                                        <input style="margin-left:3em" type="password" id="password" 
+                                               name="password" placehold="password" required>
+                                    </li>
 
-                            
-                            <a href="/forgetpassword.html">Forgot Password </a>
-                            <a style="margin-left:1em" href="/createAccount.html">Sign Up</a>
-                            <input style="margin-left:2em" id="loginclick" type="submit" value="Login">
-                        </ul>
-                            
-                    </form>
+
+                                    <a href="/forgetpassword.html">Forgot Password </a>
+                                    <a style="margin-left:1em" href="/createAccount.html">Sign Up</a>
+                                    <input style="margin-left:2em" id="loginclick" type="submit" value="Login">
+                                </ul>
+
+                            </form>
                         </ul>
                     </div>
                 </div>
@@ -102,17 +112,17 @@
 
         </div>
     </div>
-   
+
 
 
 
     <div style="min-height: 50px;">
         <!-- Jssor Slider Begin -->
-        <!-- To move inline styles to css file/block, please specify a class name for each element. --> 
+        <!-- To move inline styles to css file/block, please specify a class name for each element. -->
         <!-- ================================================== -->
         <div id="slider1_container" style="display: none; position: relative; margin: 0 auto;
         bottom: 0px; padding-top:330px; left: 0px; width: 1300px; height: 500px; overflow: hidden;">
-            <!-- Loading Screen --> 
+            <!-- Loading Screen -->
             <div u="loading" style="position: absolute; top: 0px; left: 0px;">
                 <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
                 top: 0px; left: 0px; width: 100%; height: 100%;">
@@ -133,35 +143,47 @@
                     <img u="image" src2="../img/WatsonImages/legal_pic.jpg" />
                 </div>
             </div>
-            
-            <style>
 
+            <style>
                 .jssorb21 {
                     position: absolute;
                 }
-                .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
-                    position: absolute;
-                    /* size of bullet elment */
-                    width: 19px;
-                    height: 19px;
-                    text-align: center;
-                    line-height: 19px;
-                    color: white;
-                    font-size: 12px;
-                    background: url(../img/b21.png) no-repeat;
-                    overflow: hidden;
-                    cursor: pointer;
-                }
-                .jssorb21 div { background-position: -5px -5px; }
-                .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
-                .jssorb21 .av { background-position: -65px -5px; }
-                .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+
+                    .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+                        position: absolute;
+                        /* size of bullet elment */
+                        width: 19px;
+                        height: 19px;
+                        text-align: center;
+                        line-height: 19px;
+                        color: white;
+                        font-size: 12px;
+                        background: url(../img/b21.png) no-repeat;
+                        overflow: hidden;
+                        cursor: pointer;
+                    }
+
+                    .jssorb21 div {
+                        background-position: -5px -5px;
+                    }
+
+                        .jssorb21 div:hover, .jssorb21 .av:hover {
+                            background-position: -35px -5px;
+                        }
+
+                    .jssorb21 .av {
+                        background-position: -65px -5px;
+                    }
+
+                    .jssorb21 .dn, .jssorb21 .dn:hover {
+                        background-position: -95px -5px;
+                    }
             </style>
             <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
- 
+
                 <div u="prototype"></div>
             </div>
-           
+
             <style>
                 .jssora21l, .jssora21r {
                     display: block;
@@ -173,12 +195,30 @@
                     background: url(../img/a21.png) center center no-repeat;
                     overflow: hidden;
                 }
-                .jssora21l { background-position: -3px -33px; }
-                .jssora21r { background-position: -63px -33px; }
-                .jssora21l:hover { background-position: -123px -33px; }
-                .jssora21r:hover { background-position: -183px -33px; }
-                .jssora21l.jssora21ldn { background-position: -243px -33px; }
-                .jssora21r.jssora21rdn { background-position: -303px -33px; }
+
+                .jssora21l {
+                    background-position: -3px -33px;
+                }
+
+                .jssora21r {
+                    background-position: -63px -33px;
+                }
+
+                .jssora21l:hover {
+                    background-position: -123px -33px;
+                }
+
+                .jssora21r:hover {
+                    background-position: -183px -33px;
+                }
+
+                .jssora21l.jssora21ldn {
+                    background-position: -243px -33px;
+                }
+
+                .jssora21r.jssora21rdn {
+                    background-position: -303px -33px;
+                }
             </style>
             <!-- Arrow Left -->
             <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
@@ -201,9 +241,9 @@
                 <h2 class="featurette-heading">How does LegalWise Work?</h2>
                 <p class="lead">Legal Wise is a nonprofit organization that helps facilitate law firms in a more efficient way.</p>
             </div>
-           
+
             <div class="col-md-5">
-               
+
             </div>
         </div>
 
@@ -211,10 +251,10 @@
 
         <div class="row featurette">
             <div class="col-md-5">
-              
+
             </div>
             <div class="col-md-7">
-                <h2 class="featurette-heading">How does LegalWise work with Q&A Engine? Check out our packages <a href="/packages.html">here</a></h2> 
+                <h2 class="featurette-heading">How does LegalWise work with Q&A Engine? Check out our packages <a href="/packages.html">here</a></h2>
                 <div class="lead" style="background-color:#f0f0f0; border: 1px dashed #000; white-space: nowrap;">
 
                 </div>
@@ -232,7 +272,7 @@
                 </div>
             </div>
             <div class="col-md-5">
-                
+
             </div>
         </div>
 
@@ -246,7 +286,6 @@
         </footer>
 
     </div><!-- /.container -->
-
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -281,7 +320,7 @@
                 $UISearchMode: 1,                                   //[Optional] The way (0 parellel, 1 recursive, default value is 1) to search UI components (slides container, loading screen, navigator container, arrow navigator container, thumbnail navigator container etc).
                 $PlayOrientation: 1,                                //[Optional] Orientation to play slide (for auto play, navigation), 1 horizental, 2 vertical, 5 horizental reverse, 6 vertical reverse, default value is 1
                 $DragOrientation: 1,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
-              
+
                 $BulletNavigatorOptions: {                          //[Optional] Options to specify and enable navigator or not
                     $Class: $JssorBulletNavigator$,                 //[Required] Class to create navigator instance
                     $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
