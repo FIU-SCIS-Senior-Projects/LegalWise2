@@ -1,0 +1,27 @@
+<%@ page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+
+<t:master>
+<jsp:attribute name="header">
+	<%@ include file="header.jsp" %>
+</jsp:attribute>
+<jsp:attribute name="hasHeader">${ true }</jsp:attribute>
+<jsp:body>
+<div class="content none">
+	<ul class="tabs">
+		<li class="bck-white">
+			<a href="#">Search</a>
+		</li>
+		<li class="bck-gray">
+			<a href="#">Documents</a>
+		</li>
+	</ul>
+</div>
+<div class="content bck-white">
+	<div class="control">										
+		<i class="fa fa-search control-icon h4"></i>						
+		<input type="password" placeholder="Password">
+	</div>	
+</div>
+</jsp:body>
+</t:master>

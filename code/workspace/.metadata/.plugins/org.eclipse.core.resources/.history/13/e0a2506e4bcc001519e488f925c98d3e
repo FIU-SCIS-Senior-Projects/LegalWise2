@@ -1,0 +1,15 @@
+<%@ page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+
+<t:master>
+	<jsp:attribute name="header">
+		<%@ include file="header.jsp" %>
+	</jsp:attribute>
+	<jsp:attribute name="bodyClass">small</jsp:attribute>
+	<jsp:body>
+		<div class="2">
+			<div class="">
+			</div>
+		</div>	   
+	</jsp:body>
+</t:master>

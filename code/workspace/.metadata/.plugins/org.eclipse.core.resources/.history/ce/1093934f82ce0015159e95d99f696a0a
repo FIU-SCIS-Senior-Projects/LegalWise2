@@ -1,0 +1,33 @@
+package data;
+
+/**
+ * This class provides a connection mechanism for the app database
+ * @author Fernando
+ *
+ */
+public class Connector {
+	private String dbUrl;
+	
+	/**
+	 * 
+	 */
+	public Connector() {
+		
+	}
+	
+	/**
+	 * @param dbUrl the dbUrl to set
+	 */
+	public String getDbUrl(String dbUrl) {
+		return dbUrl;
+	}
+
+	/**
+	 * 
+	 * @return
+	 */
+	private String obtainDbUrl() {
+		String env = System.getenv("");
+		return null;
+	}
+}

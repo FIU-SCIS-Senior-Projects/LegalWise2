@@ -1,0 +1,21 @@
+<%@ page language="java" contentType="text/html"
+    pageEncoding="UTF-8" %>
+
+<%
+String url = 
+	(String)request.getAttribute("javax.servlet.forward.request_uri");
+%>
+   
+<div class="content none">
+	<ul class="tabs">
+		<li class="bck-white">
+			<a href="index">Search</a>
+		</li>
+		<li class="bck-gray">
+			<a href="documents">Documents</a>
+		</li>
+		<li class="bck-gray">
+			<%= request.getRequestURI() %>
+		</li>
+	</ul>
+</div>

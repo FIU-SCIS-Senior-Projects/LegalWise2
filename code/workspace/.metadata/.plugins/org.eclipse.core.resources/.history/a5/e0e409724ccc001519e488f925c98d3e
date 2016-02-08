@@ -1,0 +1,29 @@
+<%@ page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+
+<t:master>
+	<jsp:attribute name="header">
+		<%@ include file="header.jsp" %>
+	</jsp:attribute>
+	<jsp:attribute name="bodyClass">small</jsp:attribute>
+	<jsp:body>
+		<div class="row">
+			<div class="col-md-6">
+				<div>					
+					<input type="text">
+					<input type="password">
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						Forgot Username
+					</div>
+					<div class="col-md-6">
+						Forgot Password
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+			</div>
+		</div>	   
+	</jsp:body>
+</t:master>

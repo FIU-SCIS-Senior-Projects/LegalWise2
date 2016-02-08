@@ -1,0 +1,21 @@
+<%@ page contentType="text/html" pageEncoding="UTF-8" %>
+<%@ taglib prefix="t" tagdir="/WEB-INF/tags" %>
+
+<t:master>
+<jsp:attribute name="header">
+	<%@ include file="header.jsp" %>
+</jsp:attribute>
+<jsp:attribute name="hasHeader">${ true }</jsp:attribute>
+<jsp:body>
+<div class="content none">
+	<ul class="tabs">
+		<li class="bck-white">
+			<a href="index">Search</a></li>
+		<li class="bck-gray">Documents</li>
+	</ul>
+</div>
+<div class="content bck-white">
+	Documents will be here	
+</div>
+</jsp:body>
+</t:master>

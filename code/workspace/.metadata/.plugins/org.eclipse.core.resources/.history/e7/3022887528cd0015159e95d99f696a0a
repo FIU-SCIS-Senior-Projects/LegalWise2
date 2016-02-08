@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html"
+    pageEncoding="UTF-8" %>
+
+<div class="content short header">
+	<h4 class="text-one-line">
+		Legal<span class="text-red">Wise</span>
+		<span class="text-red">2.0</span>
+	</h4>
+	<div class="user-spot">		
+		<span class="fa-stack fa-lg fa-pull-right">
+			<i class="fa fa-circle fa-stack-2x text-green"></i>
+			<i class="fa fa-user fa-stack-1x"></i>
+		</span>
+		<div class="fa-pull-right text-right text-one-line">
+			<span class="h7 text-white bck-red">&nbsp;ADMIN&nbsp;</span>
+			<span class="h6">Fernando Gomez</span><br/>
+			<span class="h6">
+				<a href="#">Profile</a>
+				<a href="#">Logout</a>
+			</span>
+		</div>
+	</div>
+</div>      

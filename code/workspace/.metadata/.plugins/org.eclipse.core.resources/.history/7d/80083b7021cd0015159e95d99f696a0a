@@ -1,0 +1,118 @@
+package wasdev.sample.servlet;
+
+import java.io.IOException;
+import java.net.URLEncoder;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import security.Authoriaztion;
+
+/**
+ * Servlet implementation class Dispatcher
+ */
+@WebServlet({"/public", "/login", "/index", 
+	"/documents", "/profile", "/logout"})
+public class Dispatcher extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public Dispatcher() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, 
+	 * 		HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, 
+			HttpServletResponse response) 
+					throws ServletException, IOException {
+		RequestDispatcher view;
+		Authoriaztion auth;
+		String path = null;
+		
+		// extract requested page from path
+		path = getPath(request);
+		
+		// if a public resource is requested, simply return it
+		if (path.startsWith("/public"))
+			view = request.getRequestDispatcher(path);
+		else {
+			// initialize authorization manager
+			auth = new Authoriaztion(request, response);
+			
+			if (!auth.isValidSession()) {
+				request.setAttribute("retUrl", 
+						URLEncoder.encode(request.getRequestURI(), "UTF-8"));			
+				view = request.getRequestDispatcher("login.jsp");
+			} else 				
+				// send to requested
+				view = request.getRequestDispatcher(path + ".jsp");
+		}
+		
+        view.forward(request, response);
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, 
+	 * 		HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, 
+			HttpServletResponse response) 
+					throws ServletException, IOException {
+		String path , retUrl;
+		Authoriaztion auth = new Authoriaztion(request, response);
+		RequestDispatcher view;
+		
+		// extract requested page from path
+		path = getPath(request);
+		// attribute that says where to go after login
+		retUrl = request.getParameter("retUrl");
+		
+		log(path);
+		log(retUrl);
+		switch (path) {
+			case "/login":
+				if (auth.login()) {
+					// login succeeded
+					if (retUrl == null || retUrl.isEmpty())
+						retUrl = "/index";
+					
+					view = request.getRequestDispatcher(retUrl);
+					view.forward(request, response);
+				} else {
+					// login failed
+					if (retUrl != null)
+						request.setAttribute("retUrl", retUrl);
+					
+					request.setAttribute("error", "Invalid credentials");
+					view = request.getRequestDispatcher("login.jsp");
+					view.forward(request, response);
+				}				
+				
+				break;
+			default:
+				response.setStatus(404);
+				response.getOutputStream().write(
+					"The resource was not found".getBytes());
+		}
+	}
+	
+	/**
+	 * 
+	 * @param request
+	 * @return
+	 */
+	private String getPath(HttpServletRequest request) {
+		return request.getRequestURI().substring(
+				request.getContextPath().length()).toLowerCase();		
+	}
+}

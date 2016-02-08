@@ -1,0 +1,23 @@
+package security;
+
+import javax.servlet.http.HttpServletRequest;
+
+/**
+ * Provides authorization mechanism such as login, logout, session check, etc.
+ * This class extracts and inject authorization data into http requests.
+ * Each time a page or service is requested, this class should be used to
+ * determine wither the user is properly logged in and has the right 
+ * privileges.
+ * @author Fernando Gomez
+ */
+public class Authoriaztion {
+	private HttpServletRequest request;
+	
+	/**
+	 * @author Fernando Gomez
+	 * @param request
+	 */
+	public Authoriaztion(HttpServletRequest request) {
+		this.request = request;
+	}
+}

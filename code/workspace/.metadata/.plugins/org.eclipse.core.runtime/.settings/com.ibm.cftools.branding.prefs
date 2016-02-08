@@ -1,0 +1,3 @@
+bluemix.default.url=IBM Bluemix (US South),https\://api.ng.bluemix.net,https\://console.ng.bluemix.net/registration/?cm_mmc\=IBMEclipseTools-_-EclipseJavaEE-_-Mars1-_-Registration,
+bluemix.nondefault.urls=IBM Bluemix (Sydney),https\://api.au-syd.bluemix.net,https\://console.ng.bluemix.net/registration/?cm_mmc\=IBMEclipseTools-_-EclipseJavaEE-_-Mars1-_-Registration,||IBM Bluemix (United Kingdom),https\://api.eu-gb.bluemix.net,https\://console.ng.bluemix.net/registration/?cm_mmc\=IBMEclipseTools-_-EclipseJavaEE-_-Mars1-_-Registration,
+eclipse.preferences.version=1

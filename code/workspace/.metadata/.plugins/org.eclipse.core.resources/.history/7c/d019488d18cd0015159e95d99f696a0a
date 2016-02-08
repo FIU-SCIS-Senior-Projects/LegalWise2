@@ -1,0 +1,14 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%@taglib prefix="t" tagdir="tags" %>
+
+<t:master>
+	<jsp:attribute name="header">
+		<h1>Login header</h1>
+	</jsp:attribute>
+	<jsp:attribute name="footer">
+		log	   
+	</jsp:attribute>
+	<jsp:body>
+			   
+	</jsp:body>
+</t:master>
