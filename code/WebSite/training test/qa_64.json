@@ -1,0 +1,588 @@
+﻿{
+  "add": {
+    "doc": {
+      "id": "QA000001",
+      "author": "",
+      "bibliography": "",
+      "body": "A pleading must contain a short and plain statement of the claim showing that the pleader is entitled to relief.",
+      "title": "What must a pleading contain?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA000002",
+      "author": "",
+      "bibliography": "",
+      "body": "A complaint must contain sufficient factual matter, accepted as true, to state a claim to relief that is plausible on its face.",
+      "title": "What must a complaint contain to withstand a motion to dismiss?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA000003",
+      "author": "",
+      "bibliography": "",
+      "body": "A complaint is plausible on its face when the plaintiff pleads factual content necessary for the court to draw reasonable inference that the defendant is liable for the conduct alleged.",
+      "title": "When is a complaint plausible on its face?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA000004",
+      "author": "",
+      "bibliography": "",
+      "body": "Five years. HN3 Fla. Stat. 95.11(2)(c). Further details obtain in the discussion section.",
+      "title": "What is the statute of limitation to bring an action to foreclose real property in Florida?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA000005",
+      "author": "",
+      "bibliography": "",
+      "body": "Yes",
+      "title": "Does a subsequent and separate alleged default create a new and independent right in a mortgagee to accelerate payment on a note in a subsequent foreclosure action?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA000006",
+      "author": "",
+      "bibliography": "",
+      "body": "When the last payment is due unless the mortgage contains an acceleration clause.",
+      "title": "Under Florida law, when does the statute of limitations on a mortgage foreclosure action begin to run?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA000007",
+      "author": "",
+      "bibliography": "",
+      "body": "A statute of limitations is a procedural statute that eliminates a party’s right to bring a cause of action and prevents the enforcement of a cause of action that has accrued.",
+      "title": "What is a statute of limitations?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA000008",
+      "author": "",
+      "bibliography": "",
+      "body": "A statute of repose is a substantive statute that not only prevents the enforcement of an accrued cause of action, but may also prevent the accrual of a cause of action where the final element necessary for its creation occurs beyond the time period established by the statute.HN7",
+      "title": "What is a statute of repose?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA000009",
+      "author": "",
+      "bibliography": "",
+      "body": "No",
+      "title": "Does the five-year limitations under Florida laws affect the life of the lien or extinguished the debt?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000010",
+      "author": "",
+      "bibliography": "",
+      "body": "A plaintiff must show the validity of his or her title and the invalidity of the title of the opposing party.",
+      "title": "What must a plaintiff show to quiet title to his or her property?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000011",
+      "author": "",
+      "bibliography": "",
+      "body": "A plaintiff must allege: 1) the plaintiff has title to the subject property; 2) there is a cloud on that title; and 3) the cloud is invalid.",
+      "title": "What must a plaintiff allege under Florida law to state a valid claim for quiet title?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000012",
+      "author": "",
+      "bibliography": "",
+      "body": "It shall terminate after the expiration of the following: five years after the date of maturity HN9 Fla. Stat. 95.281(1)(a), except those specified",
+      "title": "When shall a lien of a mortgage or other real property instrument terminate?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000013",
+      "author": "",
+      "bibliography": "",
+      "body": "HN1 735 ILCS 5/15-1501 (2004) of the Mortgage Foreclosure Law identifies those who must be joined as party defendants in foreclosure proceedings. A mortgagor is a necessary party. 735 ILCS 5/15-1501(a)(i) (2004).",
+      "title": "Which document identifies those who must be joined as party defendants in foreclosure proceedings?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000014",
+      "author": "",
+      "bibliography": "",
+      "body": "HN1 735 ILCS 5/15-1501 (2004) of the Mortgage Foreclosure Law identifies those who must be joined as party defendants in foreclosure proceedings. A mortgagor is a necessary party. 735 ILCS 5/15-1501(a)(i) (2004).",
+      "title": "Which document addresses a mortgagor is a necessary party?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000014",
+      "author": "",
+      "bibliography": "",
+      "body": "In rem jurisdiction is a court's power to adjudicate the rights to a given piece of property, including the power to seize and hold it.",
+      "title": "What is In rem jurisdiction?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000015",
+      "author": "",
+      "bibliography": "",
+      "body": "A proceeding in rem is one which is taken directly against property or one which is brought to enforce a right in the thing itself. ",
+      "title": "What is a proceeding in rem?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000016",
+      "author": "",
+      "bibliography": "",
+      "body": "The legal fiction underlying an in rem proceeding is that the property, not the owner of the property, is liable to the complainant. It treats property, therefore, as a defendant, susceptible of being tried and condemned, while the owner merely gets notice, along with the rest of the world, and may appear for his property or not.",
+      "title": "Who is liable to the complainant in rem proceeding?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000017",
+      "author": "",
+      "bibliography": "",
+      "body": "A proceeding quasi in rem has been characterized as an in rem action which affects only the interests of particular persons in a certain thing. A quasi in rem action is brought against a defendant personally, with jurisdiction based on an interest in property, the objective being to deal with the particular property or to subject the property to the discharge of the claims asserted. Unlike an in rem action, a quasi in rem action operates only as between the parties to the proceedings.",
+      "title": "What is a proceeding quasi in rem?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000018",
+      "author": "",
+      "bibliography": "",
+      "body": "In one of two types of quasi in rem action, a plaintiff seeks to secure a pre-existing claim in the subject property and to extinguish or establish the nonexistence of similar interests of particular persons.",
+      "title": "What would be a plaintiff's quasi in rem action?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000019",
+      "author": "",
+      "bibliography": "",
+      "body": "A mortgage foreclosure proceeding must be deemed a quasi in rem action.",
+      "title": "What action should mortgage foreclosure proceeding be deemed?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000020",
+      "author": "",
+      "bibliography": "",
+      "body": "One of the pivotal differences between in rem and quasi in rem actions is whether the defendant is the property or a named person. In in rem actions, the property itself is the defendant, while in quasi in rem actions, a named party is the defendant. In a foreclosure action, the property is not the defendant. Rather, the mortgagor, the person whose interest in the real estate is the subject of the mortgage, is a necessary party defendant to the foreclosure proceedings. 735 ILCS 5/15-1501(a)(i) (2004). As such, the proceeding must be brought against a named party and a foreclosure action must be a quasi in rem action.",
+      "title": "What is the difference between in rem action and quasi in rem action?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000021",
+      "author": "",
+      "bibliography": "",
+      "body": "In foreclosure actions, the property is not the instrumentality of the wrong, nor is it responsible for a plaintiff's injury. The mortgagor is the instrumentality of the wrong. It was he or she who breached the contract by defaulting on the note secured by the mortgage.",
+      "title": "What is the instrumentality of the wrong in foreclosure actions?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000022",
+      "author": "",
+      "bibliography": "",
+      "body": "Because a mortgagor is a necessary party in a foreclosure action, it is necessarily true that there must be personal service on the mortgagor, i.e., citation to him or her. In in rem actions, personal service is not required on any person, not even the owner. In in rem actions, there is public citation to the world. That distinction also supports the conclusion that a foreclosure proceeding is quasi in rem.",
+      "title": "What supports the conclusion that a foreclosure proceeding is quasi in rem?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000023",
+      "author": "",
+      "bibliography": "",
+      "body": "A mortgage foreclosure proceeding does not bind the whole world.",
+      "title": "Does a mortgage foreclosure proceeding bind the whole world?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000024",
+      "author": "",
+      "bibliography": "",
+      "body": "The Mortgage Foreclosure Law makes clear that the entire world is not bound by a foreclosure judgment. It states: The court may proceed to adjudicate their respective interests, but any disposition of the mortgaged real estate shall be subject to (i) the interests of all other persons not made a party or (ii) interests in the mortgaged real estate not otherwise barred or terminated in the foreclosure. 735 ILCS 5/15-1501(a) (2004).",
+      "title": "What should be the disposition of the mortgaged real estate subject to?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000025",
+      "author": "",
+      "bibliography": "",
+      "body": "735 ILCS 5/15-1501(a) (2004)",
+      "title": "What document address that the entire world is not bound by a foreclosure judgment?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000026",
+      "author": "",
+      "bibliography": "",
+      "body": "Based on the well-settled principles distinguishing in rem and quasi in rem actions and the requirements of the Mortgage Foreclosure Law, a foreclosure proceeding is a quasi in rem action.",
+      "title": "Which action is foreclosure proceeding?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000027",
+      "author": "",
+      "bibliography": "",
+      "body": "Conn. Gen. Stat. § 49-1 provides: The foreclosure of a mortgage is a bar to any further action upon the mortgage debt, note, or obligation against the person or persons who are liable for payment thereof who are made parties to the foreclosure and also against any person or persons upon whom service of process to constitute an action in personam could have been made within Connecticut at the commencement of the foreclosure; but the foreclosure is not a bar to any further action upon the mortgage debt, note, or obligation as to any person liable for the payment thereof upon whom service of process to constitute an action in personam could not have been made within Connecticut at the commencement of the foreclosure. The judgment in each such case shall state the names of all persons upon whom service of process has been made as herein provided.",
+      "title": "Which document addresses that if foreclosure of a mortgage is a bar?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000028",
+      "author": "",
+      "bibliography": "",
+      "body": "At any time within 30 days after the time limited for redemption has expired, any party to a mortgage foreclosure may file a motion seeking a deficiency judgment.",
+      "title": "What is the time limitation to file a motion seeking a deficiency judgment?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000029",
+      "author": "",
+      "bibliography": "",
+      "body": "Conn. Gen. Stat. § 49-14(a)",
+      "title": "What document addressed the time limitation to file a motion seeking a deficiency judgment?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000030",
+      "author": "",
+      "bibliography": "",
+      "body": "any party to a mortgage foreclosure may file a motion seeking a deficiency judgment.",
+      "title": "Who can file a motion seeking a deficiency judgment?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000031",
+      "author": "",
+      "bibliography": "",
+      "body": "Such motion shall be placed on the short calendar for an evidentiary hearing.",
+      "title": "Where should the motion seeking a deficiency judgment be placed?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000032",
+      "author": "",
+      "bibliography": "",
+      "body": "Under Conn. Gen. Stat. § 49-1",
+      "title": "Which document addresses that a judgment of strict foreclosure extinguishes all rights of the foreclosing mortgagee?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000033",
+      "author": "",
+      "bibliography": "",
+      "body": "a judgment of strict foreclosure extinguishes all rights of the foreclosing mortgagee on the underlying note except those enforceable through the use of the deficiency judgment procedure delineated in Conn. Gen. Stat. § 49-14.",
+      "title": "What right does a judgment of strict foreclosure extinguish?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000034",
+      "author": "",
+      "bibliography": "",
+      "body": "Those who promulgate statutes or rules do not intend to promulgate statutes or rules that lead to absurd consequences or bizarre results.",
+      "title": "What do those who promulgate statutes or rules intend to do?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000035",
+      "author": "",
+      "bibliography": "",
+      "body": "The right of appeal is had only when granted by constitutional or statutory provision.",
+      "title": "What is the right of appeal?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000036",
+      "author": "",
+      "bibliography": "",
+      "body": "Haw. Rev. Stat. § 641-1(a) (1985)",
+      "title": "Which document addresses the right of appeal?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000037",
+      "author": "",
+      "bibliography": "",
+      "body": "A final judgment or decree is not necessarily the last decision of a case.",
+      "title": "What is the last decision of a case?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000038",
+      "author": "",
+      "bibliography": "",
+      "body": "What determines the finality of an order or decree is the nature and effect of the order or decree. When the order, judgment or decree finally determines the right of the parties as to the controversy, or some material portion thereof, and provides the means of carrying the order, judgment or decree into effect it is final. In other words, if the order is a final determination on the merits, leaving only its administration and enforcement, the order is final and appealable despite that ministerial duties incident to it remain to be performed.",
+      "title": "What determines the finality of an order or decree?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000039",
+      "author": "",
+      "bibliography": "",
+      "body": "28 U.S.C.S. § 157(b)(2)",
+      "title": "What document addresses whether to remand or abstain to the state court?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000040",
+      "author": "",
+      "bibliography": "",
+      "body": "A proceeding is core under 28 U.S.C.S. § 157 if it invokes a substantive right provided by Title 11 or it is a proceeding that, by its nature, could arise only in the context of a bankruptcy case.",
+      "title": "What is a proceeding?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000041",
+      "author": "",
+      "bibliography": "",
+      "body": "The court must abstain pursuant to 28 U.S.C.S. § 1334(c)(2) when the following four requirements are met: (1) the case is based on a state law claim or cause of action that although related to Title 11, does not arise under Title 11 or arise under a case under Title 11; (2) there is no independent basis for federal jurisdiction for the claim other than the bankruptcy proceeding; (3) an action has been commenced in a state forum; and (4) the case could be timely adjudicated in state court.",
+      "title": "What are the requirements for the court to abstain pursuant to 28 U.S.C.S. 1334(c)(2)?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000042",
+      "author": "",
+      "bibliography": "",
+      "body": "Mandatory abstention under 28 U.S.C.S. § 1334(c)(2) does not apply to core proceedings.",
+      "title": "Does mandatory abstention under 28 U.S.C.S. 1334(c)(2) apply to core proceedings?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000043",
+      "author": "",
+      "bibliography": "",
+      "body": "28 U.S.C.S. § 1334(c)(1)",
+      "title": "Which document allows the court to abstain in the interests of justice or in the interest of comity or out of respect for state law?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000044",
+      "author": "",
+      "bibliography": "",
+      "body": "Courts weigh many factors in determining whether abstention is appropriate under 28 U.S.C.S. § 1334(c)(1) including: (1) the effect or lack thereof on efficient administration of the estate; (2) the extent to which state law issues predominate over bankruptcy issues; (3) the difficulty or unsettled nature of applicable state law; (4) the presence of a related proceeding commenced in state court or other nonbankruptcy court; (5) the jurisdictional basis, if any, other than 28 U.S.C. § 1334; (6) the degree of relatedness or remoteness of the proceeding to the main bankruptcy case; (7) the substance rather than the form of an asserted core proceeding; (8) the feasibility of severing state law claims from core bankruptcy matters to allow judgments to be entered in state court with enforcement left to the bankruptcy court; (9) the burden of the bankruptcy court's docket; (10) the likelihood that the commencement of the proceeding in bankruptcy court involves forum shopping by one of the parties; and (11) the presence of nondebtor parties.",
+      "title": "What are the factors in determining whether abstention is appropriate?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000045",
+      "author": "",
+      "bibliography": "",
+      "body": "Under 28 U.S.C.S. § 1452(b), the court to which such claim or cause of action is removed may remand such claim or cause of action on any equitable ground. Among the factors to be considered by courts in making a decision whether to remand are: (1) duplicative and uneconomical effort of judicial resources in two forums; (2) prejudice to the involuntarily removed parties; (3) forum non conveniens; (4) a holding that a state court is better able to respond to a suit involving questions of state law; (5) comity considerations; (6) lessened possibility of an inconsistent result; and(7) the expertise of the court in which the matter was pending originally.",
+      "title": "What are the factors to be considered by courts to which a claim or cause of action is removed may remand?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000046",
+      "author": "",
+      "bibliography": "",
+      "body": "Discretionary abstention under 28 U.S.C.S. § 1334(c)(1) allows the court to abstain in the interests of justice or in the interest of comity or out of respect for state law.",
+      "title": "What is discretionary abstention?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000047",
+      "author": "",
+      "bibliography": "",
+      "body": "(1) the effect or lack thereof on efficient administration of the estate; (2) the extent to which state law issues predominate over bankruptcy issues; (3) the difficulty or unsettled nature of applicable state law; (4) the presence of a related proceeding commenced in state court or other nonbankruptcy court; (5) the jurisdictional basis, if any, other than 28 U.S.C. § 1334; (6) the degree of relatedness or remoteness of the proceeding to the main bankruptcy case; (7) the substance rather than the form of an asserted core proceeding; (8) the feasibility of severing state law claims from core bankruptcy matters to allow judgments to be entered in state court with enforcement left to the bankruptcy court; (9) the burden of the bankruptcy court's docket; (10) the likelihood that the commencement of the proceeding in bankruptcy court involves forum shopping by one of the parties; and (11) the presence of nondebtor parties.",
+      "title": "What are the factors in determining whether abstention is appropriate?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000048",
+      "author": "",
+      "bibliography": "",
+      "body": "15 U.S.C.S. §§ 1692 et seq. contains an exception for attorneys collecting debts on behalf of clients.",
+      "title": "Which document contains an exception for attorneys collecting debts on behalf of clients?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000049",
+      "author": "",
+      "bibliography": "",
+      "body": "A mortgagor as against a mortgagee is not entitled to the benefits of the exemption Act of 1849 because the judgment obtained upon the mortgage is not a judgment obtained upon contract.",
+      "title": "Is a judgment obtained upon a mortgage foreclosure action a judgment obtained upon contract?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000050",
+      "author": "",
+      "bibliography": "",
+      "body": "The exemption law of the Act of April 9, 1849, Pa. Laws 533 does not apply to a debt secured by a mortgage so as to exempt any part of the mortgaged premises from sale in a mortgage foreclosure proceeding, or to permit a mortgagor to claim a debtor's exemption. Therefore, neither the cases, nor the revised Pa. R. Civ. P. 3123 has affected a mortgagee's right.",
+      "title": "Dose the exemption law apply to a debt secured by a mortgage?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000051",
+      "author": "",
+      "bibliography": "",
+      "body": "Deficiency judgments can have extremely harsh consequences, especially if natural persons should turn out to be liable for payments of those judgments. Accordingly, careful scrutiny is indicated of the applicant's entitlement to this type of relief and of the contractual limitations on liability which may be contained in the documents involved.",
+      "title": "What consequences can deficiency judgments have?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000052",
+      "author": "",
+      "bibliography": "",
+      "body": "Consideration of deficiency judgment issues at the pre-foreclosure juncture may lead to additional legal expenses imposed on all parties concerning matters which may turn out to be speculative. Whether there will be a deficiency will be unknown until the foreclosure sale has taken place.",
+      "title": "What may be caused by consideration of deficiency judgement issues at the pre-foreclosure juncture?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000053",
+      "author": "",
+      "bibliography": "Where a contract was originally an agreement between two private parties, neither of which is a federal agency, state law and common law are potential sources of authority for contractual construction.",
+      "body": "",
+      "title": "What law is potential source of authority for contractual construction?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000054",
+      "author": "",
+      "bibliography": "",
+      "body": "Attorney's fees out of line with the underlying debt incurred should not be countenanced whether the grounds upon which such a determination is made flow from state or federal law.",
+      "title": "What is a basis for determination of the approoriate attorney's fee?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000055",
+      "author": "",
+      "bibliography": "",
+      "body": "Summary judgment is appropriate when there are no genuine issues of material fact and the moving party is entitled to judgment as a matter of law.",
+      "title": "When is summary judgement appropriate?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000056",
+      "author": "",
+      "bibliography": "",
+      "body": "11 U.S.C.S. § 548 states in part that the trustee may avoid any transfer of an interest of the debtor in property, or any obligation incurred by the debtor, that was made or incurred on or within one year before the date of the filing of the petition.",
+      "title": "What does U.S. bankruptcy code 11 U.S.C.S. § 548 states with respect to the debtor’s obligations?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000057",
+      "author": "",
+      "bibliography": "",
+      "body": "To avoid a transfer under 11 U.S.C.S. § 548 the trustee or debtor must establish: (1) that the debtor had an interest in property; (2) that a transfer of that interest occurred within one year of the filing of the bankruptcy petition; (3) that the debtor Was insolvent at the time of the transfer or became insolvent as a result thereof; and (4) that the debtor received less than a reasonably equivalent value in exchange for such transfer.",
+      "title": "What does the trustee or debtor must establish to avoid a transfer?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000058",
+      "author": "",
+      "bibliography": "",
+      "body": "Afair and proper price, or a &quot;reasonably equivalent value,&quot; for foreclosed property, is the price in fact received at the foreclosure sale, so long as all the requirements of the state's foreclosure law have been complied with.",
+      "title": "What is a fair and proper price or reasonable equivalent value for (a mortgage) foreclosed property?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000059",
+      "author": "",
+      "bibliography": "",
+      "body": "If taxes are not paid, the municipality is entitled to enforce this lien by selling the property. The New Jersey Tax Sale law provides a municipality with a lien on land for taxes which are assessed on such land.",
+      "title": "What happens when taxes are not paid?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000060",
+      "author": "",
+      "bibliography": "",
+      "body": "The tax sale process differs from a mortgage foreclosure and sale in several respects. When a default in payment occurs, a mortgagee has the right to institute a civil action to foreclose on the property to recover the mortgage indebtedness, including interest and costs. Upon conclusion of this action a judgment is entered which adjudicates the amount due on the mortgage with interest, costs and fees.",
+      "title": "How does the tax sale process differs from a mortgage foreclosure?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000061",
+      "author": "",
+      "bibliography": "",
+      "body": "The person charged with the duty to sell is usually the sheriff of the county where the property is located.",
+      "title": "Who is charged with the duty to sell?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000062",
+      "author": "",
+      "bibliography": "",
+      "body": "There are significant differences in procedure on mortgage foreclosure and tax sale certificate foreclosure in New Jersey. In a mortgage foreclosure, the judgment directs the property to be sold and the sale occurs after the judgment. In a tax sale certificate foreclosure, the certificate is sold and then after a two-year waiting period, the certificate holder can obtain a foreclosure judgment which vests title directly in the holder without further sale.",
+      "title": "What are the differences in procedure on mortgage foreclosure and tax sale certificate foreclosure in New Jersey?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000063",
+      "author": "",
+      "bibliography": "",
+      "body": "The market value of a piece of property is the price which it might be expected to bring if offered for sale in a fair market; not the price which might be obtained on a sale at public auction or a sale forced by the necessities of the owner, but such a price as would be fixed by negotiation and mutual agreement.",
+      "title": "What is the market value of a piece of property?"
+    }
+  },
+  "add": {
+    "doc": {
+      "id": "QA0000064",
+      "author": "",
+      "bibliography": "",
+      "body": "The superior court, in an action to foreclose the right of redemption, may give full and complete relief under N.J. Stat. Ann. ch. 54, in accordance with other statutory authority of the court, to bar the right of redemption and to foreclose all prior or subsequent alienation and descents of lands and encumbrances thereof, except subsequent municipal liens, and to adjudge an absolute and indefeasible estate of inheritance in fee simple, to be vested in the purchaser.",
+      "title": "How can the superior court bar the right of redemption?"
+    }
+  },
+  "commit": { }
+}

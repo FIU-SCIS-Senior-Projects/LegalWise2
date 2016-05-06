@@ -1,9 +1,0 @@
-<%@ page language="java" contentType="text/html"
-    pageEncoding="UTF-8" %>
-
-<div class="content short row">
-	<h4 class="text-one-line">
-		Legal<span class="text-red">Wise</span>
-		<span class="text-red">2.0</span>
-	</h4>
-</div>      

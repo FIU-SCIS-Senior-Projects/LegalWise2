@@ -1,3 +1,0 @@
-eclipse.preferences.version=1
-module-start-timeout=300000
-runtimes=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?>\r\n<runtimes>\r\n  <runtime id\="IBM Bluemix Runtime" name\="IBM Bluemix Runtime" runtime-type-id\="com.ibm.cftools.runtime" timestamp\="0"/>\r\n  <runtime id\="WebSphere Application Server Liberty Profile" id-set\="true" location\="C\:/Users/Fernando/Desktop/Senior Project/wlp" name\="WebSphere Application Server Liberty Profile" runtime-type-id\="com.ibm.ws.st.runtime.wlp" timestamp\="0"/>\r\n</runtimes>\r\n

@@ -1,0 +1,25 @@
+For the QA generated in trainingHNs.csv file, below are the cases used:
+
+1. ABN AMRO Mortg. Group_ Inc. v. McGahan_ 237 Ill. 2d 526:
+	QA: 1-15
+
+2. American Mortgage Corp. v. Hope_ 1994 Conn. Super. LEXIS 1140:
+	QA: 16-23
+
+3. Security Pac. Mortgage Corp. v. Miller_ 71 Haw. 65:
+	QA: 24-27
+
+4. Crossley v. Lieberman_ 868 F.2d 566:
+	QA: 38
+
+5. Dollar Sav. _ Loan Asso. v. Sigler_ 1976 Pa. Dist. _ Cnty. Dec. LEXIS 167:
+	QA: 39-41
+
+6. Federal+Home+Loan+Mortgage+Corp.+v.+Peregrine+Hall+Assocs._+L.P._+832+F.+Supp.+743:
+	QA: 42-46
+
+7. Citicorp Sav. of Ill. v. Chapman_ 132 B.R. 153:
+	QA: 28-37
+
+8. Rodriguez vs. BankofAmerica:
+	QA: 47-58

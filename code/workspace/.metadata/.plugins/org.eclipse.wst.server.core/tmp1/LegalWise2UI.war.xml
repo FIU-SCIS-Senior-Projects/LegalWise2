@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<archive>
-    <dir sourceOnDisk="C:\Users\Fernando\Documents\GitHub\LegalWise2\code\LegalWise.2.UI\target\m2e-wtp\web-resources" targetInArchive="/"/>
-    <dir sourceOnDisk="C:\Users\Fernando\Documents\GitHub\LegalWise2\code\LegalWise.2.UI\src\main\webapp" targetInArchive="/"/>
-    <dir sourceOnDisk="C:\Users\Fernando\Documents\GitHub\LegalWise2\code\LegalWise.2.UI\target\classes" targetInArchive="/WEB-INF/classes"/>
-    <file sourceOnDisk="C:\Users\Fernando\.m2\repository\jstl\jstl\1.2\jstl-1.2.jar" targetInArchive="/WEB-INF/lib/jstl-1.2.jar"/>
-</archive>

@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ISO-8859-1">
+    <title>BlueMix R-R Demo</title>    
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	
+    <style>
+		h1, h2{text-align:center}
+		#result{padding:10px}
+		.bold{font-weight:bold}
+		.displayurl{margin-bottom:10px}
+		.success{color:green;font-weight:bold;margin-bottom:15px}
+	</style>
+  </head>
+  <body>
+	<div class="container center">
+		<div class="header">
+			<h1>
+				BlueMix R&R Demo Page
+				</h1>		
+		</div>
+		<div class="row">
+			<div class="input-group">
+			  <input id="searchBox" type="text" class="form-control" placeholder="Search for...">
+			  <span class="input-group-btn">
+				<button class="btn btn-default" onclick="search();" type="button"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
+			  </span>
+			</div>
+		</div>
+		<div class="row">
+			<hr>
+			<h2><span class="glyphicon glyphicon-list" aria-hidden="true"></span> Search Result (in JSON pairs)</h2>
+			<div id="facet"></div>
+			
+			<div id="result"></div>
+		</div>
+		<div class="row">
+			<hr>
+			<h2><span class="glyphicon glyphicon-log-in" aria-hidden="true"></span> RESTful APIs From BlueMix</h2>
+			<div class="well bluemixAPI">
+			<p class="bold">Base url:</p>
+			<p class="displayurl">https://gateway.watsonplatform.net/retrieve-and-rank/api/v1/solr_clusters/sc1b79affc_dda6_40be_bf86_8003eed6790e/solr/example_collection/fcselect
+			</p>
+			</div>
+		</div>
+	</div>
+	
+    
+    
+	
+	
+	<script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+  
+	<script>		
+	
+	  $( document ).ready(function() {
+		$( "#searchBox" ).keyup(function (e) {
+		 var key = e.which;
+		 if(key == 13)  // the enter key code
+		  {
+			search();  
+		  }
+		});
+	  });	
+	
+      function search() {
+      <!--var URL_PREFIX = "http://localhost:8983/solr/demo/select?q=cat:book&hl=true&hl.q=";-->
+      <!--var URL_PREFIX = "http://localhost:8983/solr/demo/select?q=*%3A*&wt=json&indent=true"; -->
+      <!--var URL_SUFFIX = "&hl.fl=*&hl.simple.pre=<strong>&hl.simple.post=</strong>&wt=json";-->
+      <!--var URL = URL_PREFIX + $("#searchBox").val() + URL_SUFFIX;-->
+      
+      var URL_PREFIX = "https://gateway.watsonplatform.net/retrieve-and-rank/api/v1/solr_clusters/sc58a157aa_26cc_42da_aff9_99500ddb5d9a/solr/testHN_Yang_collection/fcselect?ranker_id=868fedx13-rank-1160&q="; 
+      var URL_SUFFIX = "&wt=json&fl=id,body"; 
+      var URL = URL_PREFIX + $("#searchBox").val() + URL_SUFFIX;
+	  $(".bluemixAPI").html($(".bluemixAPI").html() + '<p class="bold">current calling url:</p>' + '<p class="displayurl">' +URL + '</p>')
+      $.ajax({
+        url : URL,
+        success : function(data) {
+			//var docs_tmp = JSON.stringify(data.facet_counts);
+			//var jsonData_tmp = JSON.parse(docs_tmp);
+			//$("#facet").html("");
+			//$.each(jsonData_tmp.facet_queries, function(key,val){
+		
+				//$("#facet").html("<p>"+key+":"+val+"</p>");
+					
+			//});
+			var docs = JSON.stringify(data.response.docs);
+			var numFound = data.response.numFound;
+			var jsonData = JSON.parse(docs);
+			
+			$("#result").html("<p class='bold'>Number Found: " + numFound + "</p>");
+			
+			$(".bluemixAPI").html($(".bluemixAPI").html()+'<p class="success">Success!</p>')
+			
+			if($.isArray(jsonData))
+			{
+				for(var i=0;i<jsonData.length;i++){
+					$.map(jsonData[i], function(value, key) {
+						var content = $("#result").html();
+						$("#result").html(content+"<p> key:" + key + "</p>"+"<p> value:" + value + "</p><br>");
+					});
+				}
+			}	
+			else{
+				$.map(jsonData, function(value, key) {
+					var content = $("#result").html();
+					$("#result").html(content+"<p> key:" + key + "</p>"+"<p> value:" + value + "</p><br>");
+				});
+			}
+        },
+        dataType : 'jsonp',
+        jsonp : 'json.wrf'
+      });
+      } 
+       function test(){
+         alert("this is test");
+       }
+     </script>
+  </body>
+</html>

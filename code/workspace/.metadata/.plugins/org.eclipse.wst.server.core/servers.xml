@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<servers>
-  <server auto-publish-setting="2" auto-publish-time="1" hostname="localhost" id="WebSphere Application Server Liberty Profile at localhost" looseConfig="true" name="WebSphere Application Server Liberty Profile at localhost" runtime-id="WebSphere Application Server Liberty Profile" server-type="com.ibm.ws.st.server.wlp" server-type-id="com.ibm.ws.st.server.wlp" serverName="bluemixLocal" start-timeout="60" stop-timeout="15" timestamp="1">
-    <list key="modules" value0="LegalWise2QA::org.eclipse.jst.jee.server:LegalWise2QA::jst.web::3.0"/>
-  </server>
-  <server auto-publish-setting="2" auto-publish-time="1" hostname="localhost" id="WebSphere Application Server Liberty Profile at localhost UI" looseConfig="true" name="WebSphere Application Server Liberty Profile at localhost UI" runtime-id="WebSphere Application Server Liberty Profile" server-type="com.ibm.ws.st.server.wlp" server-type-id="com.ibm.ws.st.server.wlp" serverName="bluemixLocalUI" start-timeout="60" stop-timeout="15" timestamp="1">
-    <list key="modules" value0="LegalWise2UI::org.eclipse.jst.jee.server:LegalWise2UI::jst.web::3.0"/>
-  </server>
-</servers>
